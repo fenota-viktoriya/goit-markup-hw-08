@@ -1,0 +1,24 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background-color: var(--background-color-backdrop);
+  opacity: 1;
+  transition: opacity var(--time) var(--cubic), visibility var(--time) var(--cubic);
+}
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--time) var(--cubic), visibility var(--time) var(--cubic);
+}
+
+.backdrop.is-hidden {
+  .modal {
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: transform var(--time) var(--cubic);
+  }
+}

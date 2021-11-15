@@ -1,0 +1,34 @@
+.our-clients-list {
+  display: flex;
+}
+
+.our-clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color-second);
+  border-radius: 4px;
+  color: var(--icon-color-second);
+  transition: border-color var(--time) var(--cubic), color var(--time) var(--cubic);
+  &:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+.our-clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-clients-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
