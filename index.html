@@ -4,8 +4,9 @@
 <head>
 
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--Строчка, которая делает магию-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>WebStudio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
@@ -24,18 +25,18 @@
   <!--шапка-->
   <header class="header page-header">
     <div class="container header__container">
-
+  
       <nav class="nav">
         <a class=" logo header__logo link" href="/"> <span class="logo__part">Web</span>Studio</a>
         <ul class="nav__menu-list list">
-          <li class="nav__menu-item "><a class=" menu nav__menu-link  nav__menu-link-current link " href="./index.html">Студия</a></li>
-
-          <li class="nav__menu-item"><a class=" menu nav__menu-link link" href="./portfolio.html">Портфолио</a></li>
+          <li class="nav__menu-item "><a class=" menu nav__menu-link nav__menu-link-current  link "
+              href="./index.html">Студия</a></li>
+          <li class="nav__menu-item"><a class=" menu nav__menu-link  link" href="./portfolio.html">Портфолио</a></li>
           <li class="nav__menu-item"><a class="menu nav__menu-link link" href="#">Контакты</a></li>
         </ul>
       </nav>
-
-
+  
+  
       <ul class="header__contact-list list">
         <li class="header__contact-item "> <a class=" menu header__mail link" href="mailto:info@devstudio.com"> <svg
               class="header__mail-icon icon ">
@@ -47,8 +48,52 @@
               class="header__tel-icon icon">
               <use href="./images/symbol-defs.svg#icon-smartphone "></use>
             </svg>+38 096 111 11 11</a> </li>
-      </ul>
+      </ul>  
+      <button class="burger-btn" type="button" data-menu-open>
+        <svg class="burger-icon" width="40" height="40"> 
+          <use href="./images/symbol-defs.svg#icon-menu_40px-2 "></use>
+        </svg>
+      </button>
     </div>
+  <!--МОБИЛЬНОЕ МЕНЮ-->
+  <div class="mobile-menu is-open"  data-menu>
+    <button class="mobile-btn-close" type="button" data-menu-close>
+      <svg class="mobile-close-icon" width="40" height="40"> 
+        <use href="./images/symbol-defs.svg#icon-close_40px-1 "></use>
+      </svg>
+    </button>
+    
+    <div class="">
+      <ul class="mobile-menu-list list ">
+        <li class="nav__menu-item "><a class=" menu nav__menu-link-current link "
+          href="./index.html">Студия</a></li>
+
+      <li class="nav__menu-item"><a class=" menu nav__menu-link  link" href="./portfolio.html">Портфолио</a></li>
+      <li class="nav__menu-item"><a class="menu nav__menu-link link" href="#">Контакты</a></li>
+        </ul> </div>
+
+        <div>
+        <ul class=" mobile-contact-list list">
+          <li class="menu__contact-item "> <a class=" contact-mail link" href="mailto:info@devstudio.com"> 
+              info@devstudio.com</a>
+          </li>
+          <li class="menu__contact-item "><a class=" contact-tel link " href="tel:380961111111">
+              
+          +38 096 111 11 11</a> </li>
+        </ul>
+        
+        <ul class=" menu-social list">
+          <li class="menu-social-item "> <a class="menu-social-link  link"  aria-label="Instagram" href="#"> 
+            Instagram    </a></li>
+          <li class="menu-social-item"><a class="menu-social-link  link"  aria-label=" Twitter" href="#"> 
+            Twitter</a></li>
+          <li class="menu-social-item "><a class="menu-social-link  link"  aria-label="Facebook" href="#"> 
+            Facebook</a></li>
+          <li class="menu-social-item"><a class="menu-social-link   link" aria-label="LinkedIn" href="#"> 
+            LinkedIn</a></li>
+        </ul></div>
+
+  </div>
   </header>
 
 
@@ -170,7 +215,7 @@
       </div>
     </section>
     <!--Наша команда-->
-    <section class="section team-seaction">
+    <section class="section team-section">
       <div class="container">
         <h2 class="section-title">Наша команда</h2>
         <ul class="item-team">
@@ -414,12 +459,16 @@
   </div>
   <!--Скрипты-->
   <script src="./js/modal.js"></script>
+
   <script>
     const { height: pageHeaderHeight } = document
       .querySelector(".page-header")
       .getBoundingClientRect();
     document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    
   </script>
+  
+
 </body>
 
 </html>

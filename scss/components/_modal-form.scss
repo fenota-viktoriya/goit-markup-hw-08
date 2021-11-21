@@ -1,4 +1,4 @@
-.modal-form {
+/*.modal-form {
   display: flex;
   flex-direction: column;
 }
@@ -111,11 +111,12 @@
     outline: none;
     border-color: var(--accent-color);
   }
-}
+}*/
 /*Использую так потому, что добавила placeholder и в остальные поля */
-::placeholder {
+/*::placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--placeholder-color);
 }
+*/

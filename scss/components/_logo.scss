@@ -1,10 +1,15 @@
 .logo {
   font-family: Raleway;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--header-primary-title-color);
+
+  @media screen and (min-width:1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__part {
