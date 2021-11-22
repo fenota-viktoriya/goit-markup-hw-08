@@ -1,10 +1,10 @@
-/*.modal-form-checkbox-label {
+.modal-form-checkbox-label {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--primary-text-icon-color);
   &::before {
@@ -21,8 +21,12 @@
     background-size: cover;
     background-position: center;
     cursor: pointer;
-    transition: background-image var(--time) var(--cubic), border-color var(--time) var(--cubic);
-  }
+    transition: background-image var(--time) var(--cubic), border-color var(--time) var(--cubic); }
+@media screen and (min-width:1200px){
+  font-size: 14px;
+  line-height: 1.71;}
+
+ 
 }
 .modal-form-checkbox-link {
   color: var(--accent-color);
@@ -36,4 +40,3 @@
     border-color: var(--accent-color);
   }
 }
-*/

@@ -1,16 +1,19 @@
-/*.modal-form {
+.modal-form {
   display: flex;
   flex-direction: column;
 }
 .modal-form-title {
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
 
   color: var(--header-primary-title-color);
+  @media screen and (min-width:1200px){
+    line-height: 1.15;
+  }
 }
 .modal-form-field {
   margin-bottom: 10px;
@@ -111,12 +114,16 @@
     outline: none;
     border-color: var(--accent-color);
   }
-}*/
+}
 /*Использую так потому, что добавила placeholder и в остальные поля */
-/*::placeholder {
-  font-size: 12px;
-  line-height: 1.16;
+::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: var(--placeholder-color);
+
+  @media screen and (min-width:1200px){
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
-*/

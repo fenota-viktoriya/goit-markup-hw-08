@@ -1,6 +1,6 @@
-/*.modal {
+.modal {
   position: absolute;
-  min-width: 528px;
+  min-width: 450px;
   left: 50%;
   top: 50%;
   padding: 40px;
@@ -10,6 +10,10 @@
   box-shadow: 0px 1px 3px var(--box-shadow-modal-first), 0px 1px 1px var(--box-shadow-modal-second),
     0px 2px 1p var(--background-color-backdrop);
   border-radius: 4px;
+
+  @media screen and (min-width:1200px){
+    min-width: 528px;
+  }
 }
 .modal-close-icon {
   fill: currentColor;
@@ -38,4 +42,3 @@
     color: var(--accent-color);
   }
 }
-*/
