@@ -168,13 +168,6 @@
     font-size: 40px;
     line-height: 1.17;
   }
-  @media screen and (max-width: 1199px) {
-    font-size: 12px;
-    line-height: 1.17;
-  }
-
-
-  
 }
 .contact-tel {
   @media screen and (max-width: 479px) {
@@ -293,7 +286,10 @@
 .header__contact-item {
   display: flex;
   align-items: center;
- 
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 .icon {
   margin-right: 10px;
