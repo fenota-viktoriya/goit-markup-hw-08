@@ -1,34 +1,69 @@
-/*.section-hero {
+.section-hero {
   text-align: center;
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   background-color: var(--first-background-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, var(--gradient-color), var(--gradient-color)),
-    url("../images/2/teamwork.jpg");
+    url(../images/img/hero/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/hero2x.jpg);
+  }
+
+  @media screen and (min-width:768px){
+    max-width:768px;
+    background-image: linear-gradient(to right, var(--gradient-color), var(--gradient-color)),
+    url(../images/img/hero/hero-tablet.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/img/hero/hero-tablet2x.jpg);
+    }
+  }
+  @media screen and (min-width:1200px){
+    max-width: 1600px;
+    height:600px;
+    padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(to right, var(--gradient-color), var(--gradient-color)),
+    url(../images/img/hero/hero-desktop.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/img/hero/hero-desktop2x.jpg);
+    }
+  }
 }
 
 .section-hero-container {
-  width: 696px;
   margin: 0 auto;
-  padding-left: 45px;
-  padding-right: 45px;
+
+ @media screen and (min-width:768px){
+    width:360px;}
+    @media screen and (min-width:1200px){
+    width:696px;}
 }
+
 .main-title {
   text-align: center;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-background-color-second-text-color);
+
+ @media screen and (min-width:1200px){
+  font-size: 44px;
+  line-height:1.36;
+
+ }
+
 }
 
 .main-btn {
@@ -57,4 +92,4 @@
   &:focus {
     background-color: var(--hover-btn-color);
   }
-}*/
+}
