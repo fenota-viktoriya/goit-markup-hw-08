@@ -1127,6 +1127,10 @@ img {
   justify-content: center;
 }
 
+.team-img {
+  align-items: center;
+}
+
 .our-clients-list {
   display: flex;
   flex-wrap: wrap;
