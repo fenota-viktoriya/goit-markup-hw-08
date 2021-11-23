@@ -50,24 +50,23 @@
               <use href="./images/symbol-defs.svg#icon-smartphone "></use>
             </svg>+38 096 111 11 11</a> </li>
       </ul>  
-      <button class="burger-btn" type="button" data-menu-open>
-        <svg class="burger-icon" width="40" height="40"> 
+      <button class="burger-btn" type="button" data-menu-open aria-expanded="false"
+      aria-controls="mobile-menu">
+        <svg class="burger-icon" width="40" height="40" aria-label="Переключатель
+        мобильного меню"> 
           <use href="./images/symbol-defs.svg#icon-menu_40px-2 "></use>
         </svg>
       </button>
     </div>
   <!--МОБИЛЬНОЕ МЕНЮ-->
-  <div class="mobile-menu "  data-menu>
-    <button class="mobile-btn-close" type="button" data-menu-close 
-    aria-expanded="false"
-            aria-controls="mobile-menu-container" >
-      <svg class="mobile-close-icon" width="40" height="40"  aria-label="Переключатель
-      мобильного меню"> 
+  <div class="mobile-menu"  data-menu id="mobile-menu">
+    <button class="mobile-btn-close" type="button" data-menu-close >
+      <svg class="mobile-close-icon" width="40" height="40"> 
         <use href="./images/symbol-defs.svg#icon-close_40px-1 "></use>
       </svg>
     </button>
     
-    <div class="">
+    <div>
       <ul class="mobile-menu-list list ">
         <li class="nav__menu-item "><a class=" menu nav__menu-link-current link "
           href="./index.html">Студия</a></li>
