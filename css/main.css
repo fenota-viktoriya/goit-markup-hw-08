@@ -1653,7 +1653,6 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -4px;
   margin-bottom: 40px;
 }
 
@@ -1674,12 +1673,14 @@ img {
   }
 }
 
-.menu-list-filters {
-  margin: 4px;
-}
-
 .menu-list-filters:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 787px) {
+  .menu-list-filters {
+    margin-bottom: 15px;
+  }
 }
 
 .btn-filters {

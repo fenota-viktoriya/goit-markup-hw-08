@@ -1,8 +1,8 @@
 .item-menu-filters {
   display: flex;
   flex-wrap: wrap;
-   margin: -4px;
   margin-bottom: 40px;
+  
  
   
 
@@ -18,9 +18,13 @@
 }
 
 .menu-list-filters{
-margin: 4px;
   &:not(:last-child) {
   margin-right: 8px;}
+
+  @media screen and (max-width: 787px)
+{
+      margin-bottom: 15px;}
+  
 }
 
 .btn-filters {
