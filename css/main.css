@@ -1692,6 +1692,7 @@ img {
   line-height: 1.62;
   letter-spacing: 0.03em;
   text-align: center;
+  background-color: var(--third-background-color);
   color: var(--header-primary-title-color);
   cursor: pointer;
   -webkit-transition: background-color var(--time) var(--cubic), color var(--time) var(--cubic), -webkit-box-shadow var(--time) var(--cubic);
