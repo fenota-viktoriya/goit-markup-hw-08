@@ -11,7 +11,7 @@
     0px 2px 1p var(--background-color-backdrop);
   border-radius: 4px;
   @media screen and (max-width:320px){
-    height: 100vh;
+    overflow-y: scroll;
   }
   
   @media screen and (min-width:480px){
