@@ -1,18 +1,33 @@
-/*.item-menu-filters {
-  display: block;
+.item-menu-filters {
   display: flex;
+  flex-wrap: wrap;
+   margin: -4px;
+  margin-bottom: 40px;
+ 
+  
+
+@media screen and (min-width:768px ){
   justify-content: center;
+  flex-wrap: nowrap;
+  margin-bottom: 30px;
+}
+@media screen and (min-width:1200px){
   margin-bottom: 50px;
 }
 
-.menu-list-filters:not(:last-child) {
-  margin-right: 8px;
+}
+
+.menu-list-filters{
+margin: 4px;
+  &:not(:last-child) {
+  margin-right: 8px;}
 }
 
 .btn-filters {
   display: block;
   padding: 6px 22px;
   border-radius: 4px;
+ 
   border: none;
   font-weight: 500;
   font-size: 16px;
@@ -36,4 +51,3 @@
       0px 2px 2px var(--box-shadow-modal-first);
   }
 }
-*/

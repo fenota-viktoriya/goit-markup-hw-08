@@ -1373,11 +1373,29 @@ img {
   height: 24px;
 }
 
-/*.item-menu-filters {
-  display: block;
+.item-menu-filters {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin: -4px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .item-menu-filters {
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item-menu-filters {
+    margin-bottom: 50px;
+  }
+}
+
+.menu-list-filters {
+  margin: 4px;
 }
 
 .menu-list-filters:not(:last-child) {
@@ -1396,22 +1414,21 @@ img {
   text-align: center;
   color: var(--header-primary-title-color);
   cursor: pointer;
-  transition: background-color var(--time) var(--cubic), color var(--time) var(--cubic),
-    box-shadow var(--time) var(--cubic);
-  &:hover {
-    color: var(--main-background-color-second-text-color);
-    background-color: var(--accent-color);
-    box-shadow: 0px 3px 1px var(--border-color-modal), 0px 1px 2px var(--box-shadow-color-fifth),
-      0px 2px 2px var(--box-shadow-modal-first);
-  }
-  &:focus {
-    color: var(--main-background-color-second-text-color);
-    background-color: var(--accent-color);
-    box-shadow: 0px 3px 1px var(--border-color-modal), 0px 1px 2px var(--box-shadow-color-fifth),
-      0px 2px 2px var(--box-shadow-modal-first);
-  }
+  transition: background-color var(--time) var(--cubic), color var(--time) var(--cubic), box-shadow var(--time) var(--cubic);
 }
-*/
+
+.btn-filters:hover {
+  color: var(--main-background-color-second-text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px var(--border-color-modal), 0px 1px 2px var(--box-shadow-color-fifth), 0px 2px 2px var(--box-shadow-modal-first);
+}
+
+.btn-filters:focus {
+  color: var(--main-background-color-second-text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px var(--border-color-modal), 0px 1px 2px var(--box-shadow-color-fifth), 0px 2px 2px var(--box-shadow-modal-first);
+}
+
 /*.item-projects {
   display: flex;
   flex-wrap: wrap;
