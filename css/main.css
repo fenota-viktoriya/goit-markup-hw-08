@@ -170,6 +170,7 @@ img {
   border-radius: 50%;
   color: var(--icon-color-second);
   -webkit-transition: background-color var(--time) var(--cubic), color var(--time) var(--cubic);
+  -o-transition: background-color var(--time) var(--cubic), color var(--time) var(--cubic);
   transition: background-color var(--time) var(--cubic), color var(--time) var(--cubic);
 }
 
@@ -216,6 +217,7 @@ img {
   background-color: var(--background-color-backdrop);
   opacity: 1;
   -webkit-transition: opacity var(--time) var(--cubic), visibility var(--time) var(--cubic);
+  -o-transition: opacity var(--time) var(--cubic), visibility var(--time) var(--cubic);
   transition: opacity var(--time) var(--cubic), visibility var(--time) var(--cubic);
 }
 
@@ -224,14 +226,17 @@ img {
   opacity: 0;
   pointer-events: none;
   -webkit-transition: opacity var(--time) var(--cubic), visibility var(--time) var(--cubic);
+  -o-transition: opacity var(--time) var(--cubic), visibility var(--time) var(--cubic);
   transition: opacity var(--time) var(--cubic), visibility var(--time) var(--cubic);
 }
 
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.8);
+      -ms-transform: translate(-50%, -50%) scale(0.8);
           transform: translate(-50%, -50%) scale(0.8);
   -webkit-transition: -webkit-transform var(--time) var(--cubic);
   transition: -webkit-transform var(--time) var(--cubic);
+  -o-transition: transform var(--time) var(--cubic);
   transition: transform var(--time) var(--cubic);
   transition: transform var(--time) var(--cubic), -webkit-transform var(--time) var(--cubic);
 }
@@ -243,9 +248,11 @@ img {
   top: 50%;
   padding: 40px;
   -webkit-transform: translate(-50%, -50%) scale(1);
+      -ms-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   -webkit-transition: -webkit-transform var(--time) var(--cubic);
   transition: -webkit-transform var(--time) var(--cubic);
+  -o-transition: transform var(--time) var(--cubic);
   transition: transform var(--time) var(--cubic);
   transition: transform var(--time) var(--cubic), -webkit-transform var(--time) var(--cubic);
   background: var(--main-background-color-second-text-color);
@@ -291,6 +298,7 @@ img {
   background: var(--main-background-color-second-text-color);
   color: var(--header-primary-title-color);
   -webkit-transition: color var(--time) var(--cubic);
+  -o-transition: color var(--time) var(--cubic);
   transition: color var(--time) var(--cubic);
   cursor: pointer;
 }
@@ -352,6 +360,7 @@ img {
   border-radius: 4px;
   cursor: pointer;
   -webkit-transition: border-color var(--time) var(--cubic);
+  -o-transition: border-color var(--time) var(--cubic);
   transition: border-color var(--time) var(--cubic);
 }
 
@@ -385,8 +394,10 @@ img {
   top: 50%;
   left: 12px;
   -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   -webkit-transition: fill var(--time) var(--cubic);
+  -o-transition: fill var(--time) var(--cubic);
   transition: fill var(--time) var(--cubic);
 }
 
@@ -416,6 +427,7 @@ img {
   -webkit-box-shadow: 0px 4px 4px var(--box-shadow-form-footer);
           box-shadow: 0px 4px 4px var(--box-shadow-form-footer);
   -webkit-transition: background-color var(--time) var(--cubic);
+  -o-transition: background-color var(--time) var(--cubic);
   transition: background-color var(--time) var(--cubic);
 }
 
@@ -439,6 +451,7 @@ img {
   border-radius: 4px;
   cursor: pointer;
   -webkit-transition: border-color var(--time) var(--cubic);
+  -o-transition: border-color var(--time) var(--cubic);
   transition: border-color var(--time) var(--cubic);
 }
 
@@ -529,6 +542,7 @@ img {
   background-position: center;
   cursor: pointer;
   -webkit-transition: background-image var(--time) var(--cubic), border-color var(--time) var(--cubic);
+  -o-transition: background-image var(--time) var(--cubic), border-color var(--time) var(--cubic);
   transition: background-image var(--time) var(--cubic), border-color var(--time) var(--cubic);
 }
 
@@ -585,6 +599,7 @@ img {
   line-height: 0;
   border: none;
   -webkit-transition: color var(--time) var(--cubic);
+  -o-transition: color var(--time) var(--cubic);
   transition: color var(--time) var(--cubic);
 }
 
@@ -625,6 +640,7 @@ img {
   visibility: hidden;
   pointer-events: none;
   -webkit-transition: opacity var(--time) var(--cubic), visibility var(--time) var(--cubic);
+  -o-transition: opacity var(--time) var(--cubic), visibility var(--time) var(--cubic);
   transition: opacity var(--time) var(--cubic), visibility var(--time) var(--cubic);
 }
 
@@ -653,6 +669,7 @@ img {
   border: none;
   color: var(--header-primary-title-color);
   -webkit-transition: color var(--time) var(--cubic);
+  -o-transition: color var(--time) var(--cubic);
   transition: color var(--time) var(--cubic);
 }
 
@@ -842,6 +859,7 @@ img {
   color: var(--header-primary-title-color);
   position: relative;
   -webkit-transition: color var(--time) var(--cubic);
+  -o-transition: color var(--time) var(--cubic);
   transition: color var(--time) var(--cubic);
   padding-bottom: 32px;
   padding-top: 32px;
@@ -886,6 +904,7 @@ img {
           align-items: center;
   color: var(--primary-text-icon-color);
   -webkit-transition: color var(--time) var(--cubic);
+  -o-transition: color var(--time) var(--cubic);
   transition: color var(--time) var(--cubic);
 }
 
@@ -906,6 +925,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--primary-text-icon-color);
   -webkit-transition: color var(--time) var(--cubic);
+  -o-transition: color var(--time) var(--cubic);
   transition: color var(--time) var(--cubic);
 }
 
@@ -972,14 +992,18 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(var(--gradient-color)), to(var(--gradient-color))), url(../images/img/hero/hero.jpg);
+  background-image: -webkit-linear-gradient(left, var(--gradient-color), var(--gradient-color)), url(../images/img/hero/hero.jpg);
+  background-image: -o-linear-gradient(left, var(--gradient-color), var(--gradient-color)), url(../images/img/hero/hero.jpg);
   background-image: linear-gradient(to right, var(--gradient-color), var(--gradient-color)), url(../images/img/hero/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .section-hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img/hero/hero2x.jpg);
+    background-image: -webkit-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img/hero/hero2x.jpg);
+    background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img/hero/hero2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img/hero/hero2x.jpg);
   }
 }
@@ -988,13 +1012,17 @@ img {
   .section-hero {
     max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(var(--gradient-color)), to(var(--gradient-color))), url(../images/img/hero/hero-tablet.jpg);
+    background-image: -webkit-linear-gradient(left, var(--gradient-color), var(--gradient-color)), url(../images/img/hero/hero-tablet.jpg);
+    background-image: -o-linear-gradient(left, var(--gradient-color), var(--gradient-color)), url(../images/img/hero/hero-tablet.jpg);
     background-image: linear-gradient(to right, var(--gradient-color), var(--gradient-color)), url(../images/img/hero/hero-tablet.jpg);
   }
 }
 
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .section-hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img/hero/hero-tablet2x.jpg);
+    background-image: -webkit-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img/hero/hero-tablet2x.jpg);
+    background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img/hero/hero-tablet2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img/hero/hero-tablet2x.jpg);
   }
 }
@@ -1003,13 +1031,17 @@ img {
   .section-hero {
     max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(var(--gradient-color)), to(var(--gradient-color))), url(../images/img/hero/hero-desktop.jpg);
+    background-image: -webkit-linear-gradient(left, var(--gradient-color), var(--gradient-color)), url(../images/img/hero/hero-desktop.jpg);
+    background-image: -o-linear-gradient(left, var(--gradient-color), var(--gradient-color)), url(../images/img/hero/hero-desktop.jpg);
     background-image: linear-gradient(to right, var(--gradient-color), var(--gradient-color)), url(../images/img/hero/hero-desktop.jpg);
   }
 }
 
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .section-hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img/hero/hero-desktop2x.jpg);
+    background-image: -webkit-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img/hero/hero-desktop2x.jpg);
+    background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img/hero/hero-desktop2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img/hero/hero-desktop2x.jpg);
   }
 }
@@ -1021,13 +1053,17 @@ img {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(var(--gradient-color)), to(var(--gradient-color))), url(../images/img/hero/hero-desktop.jpg);
+    background-image: -webkit-linear-gradient(left, var(--gradient-color), var(--gradient-color)), url(../images/img/hero/hero-desktop.jpg);
+    background-image: -o-linear-gradient(left, var(--gradient-color), var(--gradient-color)), url(../images/img/hero/hero-desktop.jpg);
     background-image: linear-gradient(to right, var(--gradient-color), var(--gradient-color)), url(../images/img/hero/hero-desktop.jpg);
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .section-hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img/hero/hero-desktop2x.jpg);
+    background-image: -webkit-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img/hero/hero-desktop2x.jpg);
+    background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img/hero/hero-desktop2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img/hero/hero-desktop2x.jpg);
   }
 }
@@ -1092,6 +1128,7 @@ img {
   -webkit-box-shadow: 0px 4px 4px var(--box-shadow-form-footer);
           box-shadow: 0px 4px 4px var(--box-shadow-form-footer);
   -webkit-transition: background-color var(--time) var(--cubic);
+  -o-transition: background-color var(--time) var(--cubic);
   transition: background-color var(--time) var(--cubic);
 }
 
@@ -1334,6 +1371,7 @@ img {
   border-radius: 4px;
   color: var(--icon-color-second);
   -webkit-transition: border-color var(--time) var(--cubic), color var(--time) var(--cubic);
+  -o-transition: border-color var(--time) var(--cubic), color var(--time) var(--cubic);
   transition: border-color var(--time) var(--cubic), color var(--time) var(--cubic);
 }
 
@@ -1439,6 +1477,7 @@ img {
 .adress-area {
   color: var(--main-background-color-second-text-color);
   -webkit-transition: color var(--time) var(--cubic);
+  -o-transition: color var(--time) var(--cubic);
   transition: color var(--time) var(--cubic);
 }
 
@@ -1454,6 +1493,7 @@ img {
 .adress-tel {
   color: var(--adress-mail-tel-footer-color);
   -webkit-transition: color var(--time) var(--cubic);
+  -o-transition: color var(--time) var(--cubic);
   transition: color var(--time) var(--cubic);
 }
 
@@ -1552,6 +1592,7 @@ img {
   -webkit-box-shadow: 0px, 4px, 4px var(--box-shadow-form-footer);
           box-shadow: 0px, 4px, 4px var(--box-shadow-form-footer);
   -webkit-transition: background-color var(--time) var(--cubic);
+  -o-transition: background-color var(--time) var(--cubic);
   transition: background-color var(--time) var(--cubic);
 }
 
@@ -1654,6 +1695,7 @@ img {
   cursor: pointer;
   -webkit-transition: background-color var(--time) var(--cubic), color var(--time) var(--cubic), -webkit-box-shadow var(--time) var(--cubic);
   transition: background-color var(--time) var(--cubic), color var(--time) var(--cubic), -webkit-box-shadow var(--time) var(--cubic);
+  -o-transition: background-color var(--time) var(--cubic), color var(--time) var(--cubic), box-shadow var(--time) var(--cubic);
   transition: background-color var(--time) var(--cubic), color var(--time) var(--cubic), box-shadow var(--time) var(--cubic);
   transition: background-color var(--time) var(--cubic), color var(--time) var(--cubic), box-shadow var(--time) var(--cubic), -webkit-box-shadow var(--time) var(--cubic);
 }
@@ -1722,6 +1764,7 @@ img {
   display: block;
   -webkit-transition: -webkit-box-shadow var(--time) var(--cubic);
   transition: -webkit-box-shadow var(--time) var(--cubic);
+  -o-transition: box-shadow var(--time) var(--cubic);
   transition: box-shadow var(--time) var(--cubic);
   transition: box-shadow var(--time) var(--cubic), -webkit-box-shadow var(--time) var(--cubic);
 }
@@ -1733,6 +1776,7 @@ img {
 
 .link-project-hover:hover .project-overly {
   -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
           transform: translateY(0);
 }
 
@@ -1743,6 +1787,7 @@ img {
 
 .link-project-hover:focus .project-overly {
   -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
           transform: translateY(0);
 }
 
@@ -1790,9 +1835,11 @@ img {
   left: 0;
   background-color: var(--background-color-overly);
   -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
           transform: translateY(100%);
   -webkit-transition: -webkit-transform var(--time) var(--cubic);
   transition: -webkit-transform var(--time) var(--cubic);
+  -o-transition: transform var(--time) var(--cubic);
   transition: transform var(--time) var(--cubic);
   transition: transform var(--time) var(--cubic), -webkit-transform var(--time) var(--cubic);
 }
