@@ -261,6 +261,12 @@ img {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 320px) {
+  .modal {
+    height: 100vh;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
