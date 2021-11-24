@@ -1680,6 +1680,7 @@ img {
 @media screen and (max-width: 279px) {
   .menu-list-filters:not(:last-child) {
     margin-bottom: 15px;
+    margin-right: 0;
   }
 }
 
