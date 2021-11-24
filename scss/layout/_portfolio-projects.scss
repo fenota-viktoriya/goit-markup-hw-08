@@ -1,13 +1,24 @@
-/*.item-projects {
+.item-projects {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  flex-direction: column;
+  margin: -15px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;}
 }
 .list-projects {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  margin: 15px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 6 * 15px) / 3);
+  } 
+}
+.padding-text{
+  @media screen and (min-width:768px) and (max-width:1199px){
+    padding-bottom: 32px;
+  }
 }
 
 .link-project-hover {
@@ -77,4 +88,3 @@
   letter-spacing: 0.03em;
   color: var(--main-background-color-second-text-color);
 }
-*/

@@ -1429,35 +1429,60 @@ img {
   box-shadow: 0px 3px 1px var(--border-color-modal), 0px 1px 2px var(--box-shadow-color-fifth), 0px 2px 2px var(--box-shadow-modal-first);
 }
 
-/*.item-projects {
+.item-projects {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  flex-direction: column;
+  margin: -15px;
 }
+
+@media screen and (min-width: 768px) {
+  .item-projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .list-projects {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  margin: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-projects {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-projects {
+    flex-basis: calc((100% - 6 * 15px) / 3);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .padding-text {
+    padding-bottom: 32px;
+  }
 }
 
 .link-project-hover {
   display: block;
   transition: box-shadow var(--time) var(--cubic);
-  &:hover {
-    box-shadow: 0px 1px 1px var(--box-shadow-modal-first), 0px 4px 4px var(--box-shadow-color-third),
-      1px 4px 6px var(--box-shadow-color-fourth);
-    .project-overly {
-      transform: translateY(0);
-    }
-  }
-  &:focus {
-    box-shadow: 0px 1px 1px var(--box-shadow-modal-first), 0px 4px 4px var(--box-shadow-color-third),
-      1px 4px 6px var(--box-shadow-color-fourth);
-    .project-overly {
-      transform: translateY(0);
-    }
-  }
+}
+
+.link-project-hover:hover {
+  box-shadow: 0px 1px 1px var(--box-shadow-modal-first), 0px 4px 4px var(--box-shadow-color-third), 1px 4px 6px var(--box-shadow-color-fourth);
+}
+
+.link-project-hover:hover .project-overly {
+  transform: translateY(0);
+}
+
+.link-project-hover:focus {
+  box-shadow: 0px 1px 1px var(--box-shadow-modal-first), 0px 4px 4px var(--box-shadow-color-third), 1px 4px 6px var(--box-shadow-color-fourth);
+}
+
+.link-project-hover:focus .project-overly {
+  transform: translateY(0);
 }
 
 .title-img {
@@ -1500,6 +1525,7 @@ img {
   transform: translateY(100%);
   transition: transform var(--time) var(--cubic);
 }
+
 .project-overly-text {
   width: 328px;
   height: 168px;
@@ -1508,5 +1534,4 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-background-color-second-text-color);
 }
-*/
 /*# sourceMappingURL=main.css.map */
