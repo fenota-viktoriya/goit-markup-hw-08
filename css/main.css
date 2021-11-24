@@ -997,6 +997,7 @@ img {
   background-image: linear-gradient(to right, var(--gradient-color), var(--gradient-color)), url(../images/img/hero/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
