@@ -138,6 +138,7 @@
   letter-spacing: 0.02em;
 
   color: var(--accent-color);
+  
 }
 
 .header__container {
@@ -273,6 +274,9 @@
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--primary-text-icon-color);
+  @media screen and (max-width: 479px) {
+    font-size: 8vw;
+  }
 
   transition: color var(--time) var(--cubic);
   &:hover {

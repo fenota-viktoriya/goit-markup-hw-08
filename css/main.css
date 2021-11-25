@@ -553,6 +553,16 @@ img {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .modal-form-checkbox-label {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 .modal-form-checkbox-link {
   color: var(--accent-color);
 }
@@ -927,6 +937,12 @@ img {
   -webkit-transition: color var(--time) var(--cubic);
   -o-transition: color var(--time) var(--cubic);
   transition: color var(--time) var(--cubic);
+}
+
+@media screen and (max-width: 479px) {
+  .contact-mail {
+    font-size: 8vw;
+  }
 }
 
 .contact-mail:hover {
@@ -1348,12 +1364,17 @@ img {
 }
 
 .our-clients-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin: -15px;
+}
+
+@media screen and (min-width: 299px) {
+  .our-clients-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .our-clients-link {
@@ -1776,12 +1797,6 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .padding-text {
-    padding-bottom: 32px;
-  }
-}
-
 .link-project-hover {
   display: block;
   -webkit-transition: -webkit-box-shadow var(--time) var(--cubic);
@@ -1823,7 +1838,7 @@ img {
 }
 
 .project-description {
-  padding: 20px 24px 20px;
+  padding: 20px 0 20px 24px;
   border: 1px solid var(--border-portfolio-color);
   border-top: none;
 }

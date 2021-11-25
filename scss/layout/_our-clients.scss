@@ -1,7 +1,9 @@
 .our-clients-list {
-  display: flex;
-  flex-wrap: wrap;
   margin:-15px;
+  @media screen and (min-width: 299px) {
+      display: flex;
+  flex-wrap: wrap;
+  }
 }
 
 .our-clients-link {
